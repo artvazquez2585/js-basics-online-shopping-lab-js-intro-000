@@ -56,12 +56,17 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  var i = 0;
-  while(item != cart[i].itemName || i >= cart.length)
-  {
-    i++;
+  for(let i=0;i<getCart().length;i++){
+    if (getCart()[i].itemName == item){
+      getCart()[i].splice(i,1);
+    }
   }
-  if(item == cart[i].itemName){
+//  var i = 0;
+//  while(item != cart[i].itemName || i >= cart.length)
+//  {
+//    i++;
+//  }
+//  if(item == cart[i].itemName){
 
 
   }
