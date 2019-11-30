@@ -51,7 +51,7 @@ function total() {
 //    cartTotal = getCart()[i].itemPrice;
 //  }
 //  return cartTotal;
-return getCart()[0] + getCart()[1];
+return getCart()[0].itemPrice + getCart()[1].itemPrice;
 }
 
 function removeFromCart(item) {
