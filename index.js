@@ -18,7 +18,7 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (cart.length > 0) {
+  if (cart.length > 1) {
 //Initial statement on Cart Contents return string
     let cartContents = `In your cart, you have`
     for(let i=0; i < cart.length; i++){
