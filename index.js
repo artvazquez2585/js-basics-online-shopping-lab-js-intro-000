@@ -68,8 +68,9 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber){
+    for(i=0;i<cart.length;i++)
+    orderPlaced
     cart.length = 0;
-
   }
   else{
     return `Sorry, we don\'t have a credit card on file for you.`
