@@ -30,7 +30,7 @@ function viewCart() {
       }
 //If this is not the last entry of the cart, concatenate a comma.
       else{
-        cartContents += ','
+        cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice},`
       }
     }
     return cartContents;
