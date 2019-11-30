@@ -68,7 +68,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber){
-    var orderPlaced = `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
+    var orderPlaced = `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`;
     cart.length = 0;
     return orderPlaced;
   }
