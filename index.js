@@ -56,9 +56,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  do{
-    let i++
-  }while(item != cart[i].itemName)
+  var i = 0;
+  while(item != cart[i].itemName)
+  {
+    i++;
+  }
 }
 
 function placeOrder(cardNumber) {
