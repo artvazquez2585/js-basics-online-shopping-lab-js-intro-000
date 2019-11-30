@@ -18,20 +18,23 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (cart.length > 1) {
+  if (cart.length > 0) {
 //Initial statement on Cart Contents return string
     let cartContents = `In your cart, you have`
-    for(let i=0; i < cart.length; i++){
-//Add space, item and item price
-//cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice}`
-//When reaching the last entry in the Cart, start with 'and' end with a period.
-      if(i === cart.length-1){
-        cartContents = `${cartContents} and ${cart[i].itemName} at \$${cart[i].itemPrice}.`
+    if (cart.length > 1){
+      for(let i=0; i < cart.length; i++){
+        //When reaching the last entry in the Cart, start with 'and' end with a period.
+        if(i === cart.length-1){
+          cartContents += ` and ${cart[i].itemName} at \$${cart[i].itemPrice}.`
+        }
+        //If this is not the last entry of the cart, concatenate a comma.
+        else{
+          cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice},`
+        }
       }
-//If this is not the last entry of the cart, concatenate a comma.
-      else{
-        cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice},`
-      }
+    }
+    else{
+      cartContents = ``
     }
     return cartContents;
   }
