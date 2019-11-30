@@ -23,10 +23,10 @@ function viewCart() {
     let cartContents = `In your cart, you have`
     for(let i=0; i < cart.length; i++){
 //Add space, item and item price
-cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice}`
+//cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice}`
 //When reaching the last entr in the Cart, end with a period.
       if(i === cart.length-1){
-        cartContents += '.'
+        cartContents = `${cartContents} and ${cart[i].itemName} at \$${cart[i].itemPrice}.`
       }
 //If this is not the last entry of the cart, concatenate a comma.
       else{
