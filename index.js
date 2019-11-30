@@ -50,8 +50,8 @@ function total() {
 //  for(let i=0; i < cart.length; i++){
 //    cartTotal = getCart()[i].itemPrice;
 //  }
-//  return cartTotal;
-return getCart()[0].itemPrice + getCart()[1].itemPrice;
+  return cartTotal;
+//return getCart()[0].itemPrice + getCart()[1].itemPrice;
 }
 
 function removeFromCart(item) {
