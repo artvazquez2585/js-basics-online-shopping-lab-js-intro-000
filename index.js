@@ -57,7 +57,7 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   var i = 0;
-  while(item != cart[i].itemName)
+  while(item != cart[i].itemName || i >= cart.length)
   {
     i++;
   }
