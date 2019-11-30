@@ -24,7 +24,7 @@ function viewCart() {
     for(let i=0; i < cart.length; i++){
 //Add space, item and item price
 //cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice}`
-//When reaching the last entr in the Cart, end with a period.
+//When reaching the last entry in the Cart, start with 'and' end with a period.
       if(i === cart.length-1){
         cartContents = `${cartContents} and ${cart[i].itemName} at \$${cart[i].itemPrice}.`
       }
