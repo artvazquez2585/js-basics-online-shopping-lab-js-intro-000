@@ -24,11 +24,11 @@ function viewCart() {
     for(let i=0, i < cart.length, i++){
 //When reaching the last entr in the Cart, end with a period.
       if(i === cart.length-1){
-
+        cartContents += '.'
       }
 //If this is not the last entry of the cart, concatenate a comma.
       else{
-
+        cartContents += ','
       }
     }
 
