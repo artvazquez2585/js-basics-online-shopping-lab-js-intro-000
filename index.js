@@ -35,7 +35,7 @@ function viewCart() {
     }
     else{
       //If the cart only has one item
-      cartContents += ` ${cart[i].itemName} at \$${cart[i].itemPrice}.`
+      cartContents += ` ${cart[0].itemName} at \$${cart[0].itemPrice}.`
     }
     return cartContents;
   }
