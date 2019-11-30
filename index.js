@@ -63,7 +63,7 @@ function removeFromCart(item) {
     }
   }
   return `That item is not in your cart.`
-  
+
 //  var i = 0;
 //  while(item != cart[i].itemName || i >= cart.length)
 //  {
