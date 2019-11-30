@@ -20,7 +20,7 @@ function viewCart() {
   // write your code here
   if (cart.length > 0) {
 //Initial statement on Cart Contents return string
-    cartContents = `In your cart, you have`
+    let cartContents = `In your cart, you have`
     for(let i=0; i < cart.length; i++){
 //Add space, item and item price
 cartContents = `${cartContents} ${cart[i].itemName} at \$${cart[i].itemPrice}`
