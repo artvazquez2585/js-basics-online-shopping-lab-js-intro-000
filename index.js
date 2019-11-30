@@ -47,7 +47,7 @@ function viewCart() {
 function total() {
   // write your code here
   var cartTotal = 0;
-  for(let i=0; i < cart.length; i++){
+  for(let i=0; i < getCart().length; i++){
     cartTotal = getCart()[i].itemPrice;
   }
   return cartTotal;
