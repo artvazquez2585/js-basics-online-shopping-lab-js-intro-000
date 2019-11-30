@@ -68,6 +68,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber){
+    cart.length = 0;
 
   }
   else{
