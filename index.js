@@ -19,6 +19,18 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   if (cart.length > 0) {
+//Initial statement on Cart Contents return string
+    cartContents = `In your cart, you have `
+    for(let i=0, i < cart.length, i++){
+//When reaching the last entr in the Cart, end with a period.      
+      if(i === cart.length-1){
+        
+      }
+//If this is not the last entry of the cart, concatenate a comma.      
+      else{
+        
+      }
+    }
 
   }
   else{
